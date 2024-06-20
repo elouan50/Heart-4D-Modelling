@@ -1,7 +1,7 @@
 clf; clear;
 
-file0 = 'subject1/FSI/displacement/VolumeCurve.csv';
-file1 = 'subject1/FSI/displacement/VolumeFlux.csv';
+file0 = '../data/subject1/FSI/displacement/VolumeCurve.csv';
+file1 = '../data/subject1/FSI/displacement/VolumeFlux.csv';
 A0 = readmatrix(file0);
 A1 = readmatrix(file1);
 % The two files show respectively the ventricule's volume and blood flow

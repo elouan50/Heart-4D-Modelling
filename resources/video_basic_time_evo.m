@@ -1,6 +1,6 @@
 clf; clear;
 
-path = 'subject1\FSI\displacement\';
+path = '..\data\subject1\FSI\displacement\';
 
 intervol = readmatrix(strcat(path,'IntermediateVolumesForDeformation.csv'));
 volcurve = readmatrix(strcat(path,'VolumeCurve.csv'));

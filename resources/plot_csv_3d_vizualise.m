@@ -1,6 +1,6 @@
 clf; clear;
 
-file = 'subject1/FSI/displacement/GridVelocity_0.csv';
+file = '../data/subject1/FSI/displacement/GridVelocity_0.csv';
 A = readmatrix(file);
 % columns of A are X, Y, Z, vx, vy, vz
 

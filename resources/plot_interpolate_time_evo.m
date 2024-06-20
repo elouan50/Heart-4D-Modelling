@@ -2,7 +2,7 @@ clf; clear;
 
 subject = 1;
 
-path = strcat('subject',num2str(subject),'\FSI\displacement\');
+path = strcat('..\data\subject',num2str(subject),'\FSI\displacement\');
 
 intervol = readmatrix(strcat(path, 'IntermediateVolumesForDeformation.csv'));
 volcurve = readmatrix(strcat(path, 'VolumeCurve.csv'));

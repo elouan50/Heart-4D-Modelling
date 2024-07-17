@@ -3,7 +3,6 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
@@ -15,10 +14,6 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
-
-## Introduction
-
-[Provide a more detailed description of the project. Mention its key features, goals, and why it might be useful.]
 
 ## Getting Started
 
@@ -75,26 +70,29 @@ Heart-4D-Modelling/
 ```
 
 ### Code
-The code directory contains the three main scripts essential for running the project:
+The `code` directory contains the three main scripts essential for running the project:
 
-- plots.mlx: [All of the understanding process]
-- video_basic_time_evo.m: [Export for basic output]
-- video_unterpolated_time_evo.m: [Export for advanced output]
+- `plots.mlx`: All of the understanding process
+- `video_basic_time_evo.m`: Export for basic output
+- `video_unterpolated_time_evo.m`: Export for advanced output
 
 ### Resources
-The resources directory holds reusable scripts that are utilized by the primary scripts in the code directory:
+The `resources_plot` directory holds reusable scripts that are utilized by the primary scripts in the code directory:
 
-- helper1.py: [Brief description of helper1]
-- helper2.py: [Brief description of helper2]
+- `plot_check_volume.py`: Take a look at the volume curve
+- `plot_csv_3d_vizualise.m`: Plot one of the CSV data files
+- ...
 
 ### Data
-The data directory includes the datasets and other resources required by the scripts:
+The `data` directory includes the datasets and other resources required by the scripts.
 
-- dataset1.csv: [Brief description of dataset1]
-- dataset2.csv: [Brief description of dataset2]
 
 ## Usage
 To use this project, follow these steps:
+
+1. Open the files in Matlab
+2. Eventually set up the variables at the beginning of files
+3. Run the files
 
 
 ## Contributing
@@ -107,8 +105,10 @@ We welcome contributions! To contribute, please follow these steps:
 5. Create a new Pull Request.
 
 ## License
-This project is licensed under the CC1.0.
+This project is licensed under the CC0 1.0.
 
 ## Acknowledgements
 
-
+- Students who worked on this repository: Elouan Colybes & Mathieu Jacq
+- MAny thanks to our supervisor: M.Sc. Daniel Voss
+- Link to L. Obermeier study, from which all our data come from: [here](https://ieeexplore.ieee.org/document/10478556)

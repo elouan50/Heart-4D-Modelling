@@ -1,9 +1,9 @@
 clf; clear;
 
-subject = 1;
+subject = 1;    % Can be 1,2,3
 
+% Importing data
 path = strcat('..\data\subject',num2str(subject),'\FSI\displacement\');
-
 intervol = readmatrix(strcat(path,'IntermediateVolumesForDeformation.csv'));
 
 grid_velocity = cell(1,10);
@@ -14,6 +14,8 @@ end
 n = size(grid_velocity{1},1);
 indic = intervol(:,1);
 
+
+% Select 3 points for which we want to plot the displacement
 point1 = 61;
 point2 = floor(rand()*n);
 point3 = floor(rand()*n);
@@ -33,7 +35,8 @@ end
 
 
 
-tiledlayout(3,3);
+t = tiledlayout(3,3);
+title(t,'position = f(volume)')
 nexttile;
 
 plot(indic,T1(:,1),'*',color='red');

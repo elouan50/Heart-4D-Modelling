@@ -48,15 +48,23 @@ n_skip = floor(size(volcurve,1)/n_frames-1);
 
 F(n_frames) = struct('cdata',[],'colormap',[]); % Struct to hold frames
 
+% Matrix containing all positions
+output = cell(2,n_frames);
+
 % Iteration on all frames: refresh the position for every frame
 
 for i = 1:n_frames
+    output{1,i} = volcurve((i-1)*n_skip+1,2); % Time stamp for position
+
     k = which_plot(volcurve((i-1)*n_skip+1,1),indic); % Get plot #
 
     % Get values
     img_x = grid_velocity{k}(:,1);
     img_y = grid_velocity{k}(:,2);
     img_z = grid_velocity{k}(:,3);
+
+    % Record position
+    output{2,i} = [img_x, img_y, img_z];
     
     % Plot the frame
     plot3(img_x, img_y, img_z,'.');
@@ -69,3 +77,10 @@ for i = 1:n_frames
 end
 
 close(v);
+
+
+
+% Record the video as a CSV file.
+% /!\ Costly operation, uncomment only if needed (make take a few minutes)
+
+% writecell(output, strcat(num2str(subject),'_basic_ventricle_evo.csv'));

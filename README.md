@@ -110,5 +110,5 @@ This project is licensed under the CC0 1.0.
 ## Acknowledgements
 
 - Students who worked on this repository: Elouan Colybes & Mathieu Jacq
-- MAny thanks to our supervisor: M.Sc. Daniel Voss
+- Many thanks to our supervisor: M.Sc. Daniel Voss
 - Link to L. Obermeier study, from which all our data come from: [here](https://ieeexplore.ieee.org/document/10478556)

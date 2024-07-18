@@ -112,6 +112,14 @@ We welcome contributions! To contribute, please follow these steps:
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a new Pull Request.
 
+### To go further
+This project isn't perfect. For instance, a few points that would need to be further explored:
+- Data format when it comes to export the video in Matlab. The CSV output file is way to big, it needs to be thought differently.
+- Automating the meshing pipeline in MeshLab and Gmsh. At the moment it takes much time to transform the files.
+- Pursue to prepare the Electrical Impedance Analysis, to integrate it in the software EIDORS.
+
+We wish you the best of luck!
+
 ## License
 This project is licensed under the CC0 1.0.
 

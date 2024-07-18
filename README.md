@@ -68,7 +68,7 @@ Heart-4D-Modelling/
 │   │   ├── ...
 │   ├── dataset3.csv
 │   │   ├── ...
-├── notice_meshing.pdf
+├── instructions_meshing.pdf
 ├── README.md
 ├── LICENSE
 ```
@@ -92,7 +92,7 @@ The `data` directory includes the datasets and other resources required by the s
 
 ### Others
 
-- `notice_meshing.pdf`: Notice to create a mesh with thickness, from a CSV file.
+- `instructions_meshing.pdf`: Instructions to create a mesh with thickness, from a CSV file.
 
 
 ## Usage

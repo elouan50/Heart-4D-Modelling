@@ -1,8 +1,10 @@
 clf; clear;
 
-file = '../data/subject1/FSI/displacement/GridVelocity_0.csv';
-A = readmatrix(file);
+subject = 3;    % can be 1,2,3
+plot = 2;       % can be in 1:10
+
+A = readmatrix(strcat('../data/subject',num2str(subject),'/FSI/displacement/GridVelocity_',num2str(plot-1),'.csv'));
 % columns of A are X, Y, Z, vx, vy, vz
 
-% Plotting t0
+% Plotting the figure
 plot3(A(:,1), A(:,2), A(:,3),'.',color='blue');

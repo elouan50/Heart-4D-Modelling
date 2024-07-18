@@ -24,6 +24,7 @@ T1 = zeros(10,4);
 T2 = zeros(10,4);
 T3 = zeros(10,4);
 
+% Get their positions
 for i=1:10
     T1(i,1:3) = grid_velocity{i}(point1 , 1:3);
     T1(i,4) = i;
@@ -34,7 +35,9 @@ for i=1:10
 end
 
 
-
+% Plot the figures
+% 1st row is all x-axis
+% 1st column is point 1
 t = tiledlayout(3,3);
 title(t,'position = f(volume)')
 nexttile;
@@ -118,6 +121,3 @@ for i = 1:length(indic)
 end
 hold off;
 title("z-axis for point 3");
-
-
-

@@ -21,7 +21,10 @@ To get a copy of this project up and running on your local machine, follow these
 
 ### Prerequisites
 
-Before you begin, ensure you have installed Matlab (recommanded version >= R2024a).
+Before you begin, ensure you have installed:
+- `Matlab` (recommanded version `>= R2024a`)
+- `MeshLab`
+- `Gmsh`
 
 ### Installation
 
@@ -65,6 +68,7 @@ Heart-4D-Modelling/
 │   │   ├── ...
 │   ├── dataset3.csv
 │   │   ├── ...
+├── notice_meshing.pdf
 ├── README.md
 ├── LICENSE
 ```
@@ -77,7 +81,7 @@ The `code` directory contains the three main scripts essential for running the p
 - `video_unterpolated_time_evo.m`: Export for advanced output
 
 ### Resources
-The `resources_plot` directory holds reusable scripts that are utilized by the primary scripts in the code directory:
+The `resources_plot` directory holds reusable scripts that are utilized by the primary scripts in the `code` directory:
 
 - `plot_check_volume.py`: Take a look at the volume curve
 - `plot_csv_3d_vizualise.m`: Plot one of the CSV data files
@@ -85,6 +89,10 @@ The `resources_plot` directory holds reusable scripts that are utilized by the p
 
 ### Data
 The `data` directory includes the datasets and other resources required by the scripts.
+
+### Others
+
+- `notice_meshing.pdf`: Notice to create a mesh with thickness, from a CSV file.
 
 
 ## Usage
